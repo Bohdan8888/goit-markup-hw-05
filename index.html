@@ -463,7 +463,7 @@
             <button class="subscride-button" type="submit">
                 Subscribe
                 <svg class="icon-send" width="24" height="24">
-                    <use href="icon-Frame-3"></use>
+                    <use href="./images/icons.svg#icon-Frame-3"></use>
                 </svg>
             </button>
         </form>
@@ -479,11 +479,11 @@
                 </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
-             <form action="" class="model-form">
+             <form  class="model-form">
                <div class="user-input"> 
                 <label class="info-about-person" for="user-name">Name</label>
                 <div class="info-user-name-input">
-                <input type="text" neme="user-name" class="modal-input" placeholder=""/>
+                <input type="text" name="user-name" class="modal-input" id="user-name">
                 <svg class="icon-modal-window" width="18" height="24">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
@@ -495,7 +495,7 @@
 
             <div class="info-user-name-input">
 
-                <input type="text" neme="user-phone" class="modal-input" placeholder=""/>
+                <input type="text" name="user-phone" class="modal-input" id="user-phone">
 
             <svg  class="icon-modal-window" width="18" height="24">
 
@@ -507,7 +507,7 @@
               <div class="user-input"> 
                 <label class="info-about-person" for="user-name">Email</label>
                 <div class="info-user-name-input">
-                <input type="text" neme="user-email" class="modal-input" placeholder=""/>
+                <input type="text" name="user-email" class="modal-input" id="user-email">
                 <svg  class="icon-modal-window" width="18" height="24">                   
                     <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
@@ -516,7 +516,7 @@
             <div class="user-input-comment"> 
                 <label class="info-about-person" for="user-comment">Comment</label>
                 <textarea class="modal-window-text" name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input"></textarea>
-                
+            </div>
                 <div class="wrapper-modal-window-checkbox">
 
                     <input class="input-modal-window-checkbox visually-hidden" type="checkbox" value="true" name="user-privacy" id="user-privacy">
