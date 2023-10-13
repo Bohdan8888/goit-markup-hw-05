@@ -59,11 +59,12 @@ body{
 
 
 .li-class-link{
+    padding-top: 24px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42; 
-   padding-bottom: 20px;
+   padding-bottom: 24px;
     display: block;
     
 }
@@ -317,23 +318,16 @@ img{
     padding: 120px 0 120px;  
 }
  .visually-hidden {
-    position: absolute !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    clip: rect(0 0 0 0) !important;
-    clip-path: inset(100%) !important;
-    width: 1px !important;
-    height: 1px !important;
-    margin: -1px !important;
-    padding: 0 !important;
-    border: 0 !important;
-    text-indent: -9999px !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    -webkit-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
 .ul-section-one{
@@ -549,8 +543,15 @@ img{
         justify-content: center;
          */
          transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-        
-        
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none; 
+     }
+
+     .is-open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
      }
 
      .model{
@@ -623,7 +624,6 @@ img{
         gap: 8px;
         border-radius: 4px;
         background-color: transparent;
-        margin-bottom: 8px;
         border: 1px solid  rgba(46, 47, 66, 0.40);
         padding-left: 38px;
         outline: transparent; 
@@ -686,6 +686,7 @@ img{
      }
 
      .modal-window-text{
+        display: block;
         width: 100%;
         height: 120px;
         font-size: 12px;
@@ -706,6 +707,7 @@ img{
      }
 
      .terms-label{
+        display: block;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -722,6 +724,7 @@ img{
         align-items: center;
         justify-content: center;
         fill: transparent;
+        margin-right: 8px;
      }
 
      .modal-window-btn{
@@ -765,9 +768,8 @@ img{
      /* FOOTER-BUTTON-WRAPER */
 
      .footer-subscribe{
-        display: flex;
-        flex-direction: column;
-        margin-left: 80px;
+       
+        margin-left: auto;
      }
 
      .subscribe-paragraf{
@@ -819,6 +821,7 @@ img{
         border-radius: 4px;
         cursor: pointer;
         min-width: 165px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
 
      .subscride-button:hover,
@@ -829,4 +832,17 @@ img{
      .icon-send{
         fill: #FFF;
         margin-left: 16px;
+     }
+
+     .visually-hidden-focusable:not(focus){
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
      }
