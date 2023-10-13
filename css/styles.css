@@ -328,6 +328,7 @@ img{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    
   }
 
 .ul-section-one{
@@ -707,7 +708,7 @@ img{
      }
 
      .terms-label{
-        display: block;
+        
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -725,6 +726,7 @@ img{
         justify-content: center;
         fill: transparent;
         margin-right: 8px;
+       
      }
 
      .modal-window-btn{
@@ -763,6 +765,10 @@ img{
         letter-spacing: 0.48px;
         text-decoration-line: underline;
         color: #4d5ae5;
+    }
+
+    .icon-cneckbox{
+        
     }
     
      /* FOOTER-BUTTON-WRAPER */
