@@ -31,6 +31,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  margin-right: 83px;
 }
 
 .paragraf-footer {
@@ -85,4 +86,43 @@
 .social-link-footer .social-link:hover,
 .social-link-footer .social-link:focus {
   background-color: #31d0aa;
+}
+.footersubscrible{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.email-subscrible{
+  display: flex;
+  gap: 24px;
+ 
+}
+.button-footer{
+  display: flex;
+width: 165px;
+height: 40px;
+
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+.input-footer{
+  width: 264px;
+height: 40px;
+border-radius: 4px;
+border: 1px solid var(--WHITE, rgb(255 255 255 ));
+background-color: rgb(46 47 66 /0.1);
+padding: 8px 16px;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+color: #fff;
+
+}
+.text-subscribe{
+  color: #fff;
 }
