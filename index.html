@@ -518,8 +518,8 @@
   <input class="input-footer" type="email" name="email" placeholder="E-mail">
   <button class="button-footer">
     Subscribe
-    <svg class="fly-svg-footer" width="24" height="20">
-      <use href="./images/icons.svg#icon-fly">
+    <svg class="fly-svg-footer" width="24" height="24">
+      <use href="./images/icons.svg#icon-fly"></use>
     </svg>
   </button>
     </div>
@@ -527,60 +527,80 @@
   </div>
  
 </footer>
-   <div class="modal-overlay is-open" id="modal">
-<div class="modal">
-  
-  <form class="form-modal">
-    <button type="button" class="link-close" >
-      <svg width="8" height="8" class="button-close">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <p class="text-top-modal">Leave your contacts and we will call you back</p>
-    <label class="label-form">
-      Name 
-      <div class="input-wraper">
-        <svg class="input-icon" width="13" height="13">
-          <use href="./images/icons.svg#icon-person"></use>
+   
+<div class="modal-overlay is-open" id="modal">
+  <div class="modal">
+    <form class="form-modal">
+      <button type="button" class="link-close" aria-label="Close modal">
+        <svg width="8" height="8" class="button-close">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
-      <input class="input-form" type="text" name="text">
-      </div>
-    </label>
-     <label class="label-form">
-      Phone
-      <div class="input-wraper">
-         <svg class="input-icon" width="13" height="13">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
-      <input class="input-form" type="tel" name="phone">
-      </div>
-    </label>
-     <label class="label-form">
-      Email
-<div class="input-wraper">
-   <svg class="input-icon" width="13" height="13">
-          <use href="./images/icons.svg#icon-convert"></use>
-        </svg>
-      <input class="input-form" type="email" name="email">
-</div>
-</label>
-    <label class="label-form">
-     Comment
-     <textarea class="texterea-text" name="" rows="5" placeholder="Text imput"></textarea>
+      </button>
 
-    </label>
-    
-        <label class="label-form-check">
-     
-      <input type="checkbox">
-<p class="text-check-box">I accept the terms and conditions of the <a class="privacy-policy" href="#">Privacy Policy</a></p>
-      </label>
-      <label class="button-under-checkbox">
-    <button class="button-form" type="submit">Send</button>
-</label>
-  </form>
-</div>
+      <p class="text-top-modal">
+        Leave your contacts and we will call you back
+      </p>
 
+      <div class="label-form">
+        <label for="user-name">Name</label>
+        <div class="input-wraper">
+          <svg class="input-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+          <input class="input-form" id="user-name" type="text" name="text">
         </div>
+      </div>
+
+      <div class="label-form">
+        <label for="user-phone">Phone</label>
+        <div class="input-wraper">
+          <svg class="input-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          <input class="input-form" id="user-phone" type="tel" name="phone">
+        </div>
+      </div>
+
+      <div class="label-form">
+        <label for="user-email">Email</label>
+        <div class="input-wraper">
+          <svg class="input-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-convert"></use>
+          </svg>
+          <input class="input-form" id="user-email" type="email" name="email">
+        </div>
+      </div>
+
+      <div class="label-form">
+        <label for="user-comment">Comment</label>
+        <textarea
+          class="texterea-text"
+          id="user-comment"
+          name="comment"
+          rows="5"
+          placeholder="Text input"
+        ></textarea>
+      </div>
+
+      <div class="label-form-check">
+        <input
+          class="checkbox-form"
+          type="checkbox"
+          id="privacy-checkbox"
+          name="privacy-policy"
+          value="accepted"
+        >
+        <span class="text-check-box">
+          I accept the terms and conditions of the
+        </span>
+        <a class="privacy-policy" href="#">Privacy Policy</a>
+      </div>
+
+      <button class="button-form button-under-checkbox" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
   </body>
 </html>

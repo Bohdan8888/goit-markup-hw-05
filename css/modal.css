@@ -12,6 +12,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
 }
 .modal {
   position: relative;
@@ -24,6 +25,7 @@
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 .form-modal {
   width: 408px;
@@ -32,7 +34,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 8px;
+  gap: 16px;
   flex-shrink: 0;
   border-radius: 4px;
   background: var(--DAIRY, #fcfcfc);
@@ -48,7 +50,7 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
-  margin-bottom: 16px;
+
 }
 .label-form {
   display: flex;
@@ -71,6 +73,9 @@
   align-self: stretch;
   width: 360px;
   resize: none;
+  border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-MODAL, rgba(46, 47, 66, 0.40));
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .texterea-text::placeholder {
@@ -90,6 +95,9 @@
   padding: 8px 38px;
   align-items: center;
   align-self: stretch;
+ border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-MODAL, rgba(46, 47, 66, 0.40));
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-form {
   justify-content: center;
@@ -110,7 +118,7 @@
   align-items: center;
 }
 .text-check-box {
-  color: var(--LIGHT-SLATE, #8e8f99);
+  color: rgba(46, 47, 66, 0.4);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -171,14 +179,15 @@ input[type="checkbox"]:checked {
   background-repeat: no-repeat;
   background-position: center;
 }
-.button-close:hover
-
-{
- 
-  fill: WHITE;
+.button-close:hover{
+  fill: hsl(0, 0%, 100%);
 
 }
 
+.button-close{
+  fill: #2e2f42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-wraper{
   position: relative;
 }
@@ -191,6 +200,7 @@ justify-content: center;
 align-items: center;
   position: absolute;
    fill: #2e2f42;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wraper:focus-within .input-icon {
   fill: #4d5ae5;
