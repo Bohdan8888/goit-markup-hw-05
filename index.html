@@ -514,47 +514,65 @@
      <div class="footersubscrible">
       <p class="text-subscribe">Subscribe</p>
     <div class="email-subscrible">
-<label>
-  <input class="input-footer" type="email" name="email" placeholder="E-mail">
 
-</label>
-<label>
+  <input class="input-footer" type="email" name="email" placeholder="E-mail">
   <button class="button-footer">
     Subscribe
+    <svg class="fly-svg-footer" width="24" height="20">
+      <use href="./images/icons.svg#icon-fly">
+    </svg>
   </button>
-</label>
     </div>
   </div>
   </div>
  
 </footer>
-   <div class="modal-overlay" id="modal">
+   <div class="modal-overlay is-open" id="modal">
 <div class="modal">
   
   <form class="form-modal">
-    <a class="link-close" href="#"></a>
+    <button type="button" class="link-close" >
+      <svg width="8" height="8" class="button-close">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
     <p class="text-top-modal">Leave your contacts and we will call you back</p>
     <label class="label-form">
-      Name
-      <input class="input-form" type="text">
+      Name 
+      <div class="input-wraper">
+        <svg class="input-icon" width="13" height="13">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      <input class="input-form" type="text" name="text">
+      </div>
     </label>
      <label class="label-form">
       Phone
-      <input class="input-form" type="text">
+      <div class="input-wraper">
+         <svg class="input-icon" width="13" height="13">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      <input class="input-form" type="tel" name="phone">
+      </div>
     </label>
      <label class="label-form">
       Email
-      <input class="input-form" type="text">
-
-    
+<div class="input-wraper">
+   <svg class="input-icon" width="13" height="13">
+          <use href="./images/icons.svg#icon-convert"></use>
+        </svg>
+      <input class="input-form" type="email" name="email">
+</div>
+</label>
+    <label class="label-form">
      Comment
-     <textarea class="texterea-text" name="" rows="5">Text input</textarea>
+     <textarea class="texterea-text" name="" rows="5" placeholder="Text imput"></textarea>
 
     </label>
-    </label>
+    
         <label class="label-form-check">
      
-      <input class="checkbox-form" type="checkbox">
+      <input type="checkbox">
 <p class="text-check-box">I accept the terms and conditions of the <a class="privacy-policy" href="#">Privacy Policy</a></p>
       </label>
       <label class="button-under-checkbox">

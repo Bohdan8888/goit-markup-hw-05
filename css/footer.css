@@ -87,7 +87,7 @@
 .social-link-footer .social-link:focus {
   background-color: #31d0aa;
 }
-.footersubscrible{
+.footersubscribl{
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -101,13 +101,19 @@
   display: flex;
 width: 165px;
 height: 40px;
-
+border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border: none;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 padding: 8px 24px;
 justify-content: center;
 align-items: center;
 gap: 16px;
 }
 .input-footer{
+
   width: 264px;
 height: 40px;
 border-radius: 4px;
@@ -125,4 +131,34 @@ color: #fff;
 }
 .text-subscribe{
   color: #fff;
+  margin-bottom: 16px;
+}
+.input-footer::placeholder{
+  color: #fff;
+}
+/* button{
+ 
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border: none;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+} */
+ .input-footer:focus{
+  border-radius: 4px;
+border: 1px solid var(--GREEN, #31D0AA);
+outline: none;
+ }
+.button-footer:hover,
+.button-footer:focus {
+  background-color: rgb(49 208 170);
+}
+.fly-svg-footer{
+  fill: rgb(255, 255, 255);
 }
